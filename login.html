@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="mobile">
+    <header >
+        <img src="./img/logo.png" >
+        <input type="text" placeholder="전화번호, 이메일, 사용자 이름" id="id">
+        <br>
+        <br>
+        <input type="password" placeholder="비밀번호" id="pw">
+        <br>
+        <br>
+        <button onclick="login()">LOGIN</button>
+        <div id="alram"></div>
+        <br>
+        <br>
+        <a href="#">계정이 없으신가요? 가입하기.</a>
+    </header>
+</div>
+
+<script>
+    function login(){
+        var user={
+            id:'min',
+            pw :'mini'
+        }
+        var value =$('#id').val();
+        var pwvalue =$('#pw').val();
+
+        if(value=='' || pwvalue==''){
+            alert("아이디 또는 패스워드를 입력하세요.")
+            return false
+        }
+
+        if(value==user.id && pwvalue==user.pw){
+            alert("로그인 되었습니다.")
+            location.href='index.html'
+        }
+        else{
+            document.getElementById("alram").innerHTML="아이디 또는 패스워드가 일치하지 않습니다."
+        }
+    }
+</script>
+</body>
+</html>
