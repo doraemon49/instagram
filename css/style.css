@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+
+*{padding: 0; margin: 0;}
+/* a {color: inherit; text-decoration: none;} */
+li {list-style: none;}
+
+header{
+    text-align: center;
+}
+header>img {
+    display: block;
+    margin: 50px auto;
+    width: 70%;
+}
+input{
+    height: 40px;
+    width: 55%;
+    }
+button{
+    height: 40px;
+    width: 55%;
+}
+
+/* index.html */
+
+.po{
+    border-radius: 50%;
+    background-image: url(../img/po.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.po , .dora{
+    display: inline-block;
+}
+.dora{
+    padding: 10px;
+    vertical-align: top;
+}
+.logo{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.photo{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+.simg1 .photo{
+    background-image: url(../img/jeju.jpg);
+}
+.simg2 .photo{
+    background-image: url(../img/dong.jpg);
+}
+.simg3 .photo{
+    background-image: url(../img/se.jpg);
+}
+.simg4 .photo{
+    background-image: url(../img/nam.jpg);
+}
+
+.tag{
+    color: skyblue;
+}
+
+.active{
+    color: red;
+}
+
+
+
+
+
+    @media all and (min-width:992px){
+        #mobile{
+            width: 340px;
+            height: 640px;
+        }
+    }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="https://kit.fontawesome.com/fe59766ddf.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <link rel="stylesheet" href="./css/cssanimation.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+</head>
+<body>
+<div id="mobile">
+    <img src="./img/logo.png" class="logo">
+    <div class="po"></div>
+    <div class="dora">doraemon</div>
+    <div class="slider">
+        <div class="simg simg1">
+            <div class="photo"></div>
+            <i class="fas fa-heart"></i>
+            <div class="tag">#바다#제주도</div>
+            <div class="text">바람 쉥쉥</div>
+        </div>
+        <div class="simg simg2">
+            <div class="photo"></div>
+            <i class="fas fa-heart"></i>
+            <div class="tag">#바다#동해바다</div>
+            <div class="text">해 뜬다</div>
+        </div>
+        <div class="simg simg3">
+            <div class="photo"></div>
+            <i class="fas fa-heart"></i>
+            <div class="tag">#바다#서해바다</div>
+            <div class="text">해 진다</div>
+        </div>
+        <div class="simg simg4">
+            <div class="photo"></div>
+            <i class="fas fa-heart"></i>
+            <div class="tag">#바다#남해바다</div>
+            <div class="text">낚시중</div>
+        </div>
+    </div>
+</div>
+<script>
+       $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplayspeed:300,
+  arrows:false
+        })
+
+        $('i').click(function(){
+            $(this).toggleClass('active')
+        })
+    })
+</script>
+</body>
+</html>
